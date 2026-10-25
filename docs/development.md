@@ -1,6 +1,66 @@
 # Development
 
-> **Last updated:** 2026-10-13 · **Change:** verified PngSuite downloads (#1729).
+> **Last updated:** 2026-10-14 · **Change:** Windows build and F5 debugging in Visual Studio 2026.
+
+## Windows: Visual Studio 2026
+
+Open [`VectorCraft.slnx`](../VectorCraft.slnx), select **Debug | x64**, and press **F5**.
+The single Makefile project builds the existing Rust desktop app with Cargo, then launches
+`target/visual-studio/x86_64-pc-windows-msvc/debug/vectorcraft.exe` in the native debugger.
+**Ctrl+F5** launches without attaching the debugger. **Release | x64** uses Cargo's release profile.
+The executable and its Debug `.pdb` stay together; all Cargo/MSBuild output is gitignored under
+`target/visual-studio`, independently of ordinary command-line builds.
+
+Prerequisites:
+
+- Visual Studio 2026 with **Desktop development with C++** (MSVC v145 and a Windows SDK).
+- [rustup](https://rustup.rs/) and the x64 MSVC toolchain used by the solution:
+
+  ```powershell
+  rustup toolchain install 1.95.0-x86_64-pc-windows-msvc --profile minimal --component rustfmt,clippy,rust-src
+  rustup target add --toolchain 1.95.0-x86_64-pc-windows-msvc wasm32-unknown-unknown
+  ```
+
+`packaging/windows/visual-studio.ps1` resolves Cargo from `CARGO_HOME` or `%USERPROFILE%\.cargo`
+even when Visual Studio has an older PATH. Build, Clean and Rebuild delegate to Cargo; Clean removes
+only the desktop package's outputs for the selected profile. The solution checks dependencies on
+every build and uses `--locked`, so a missing/stale lockfile or a compiler error fails the VS build.
+The first build downloads the pinned dependencies and takes longer than incremental builds.
+Solution Explorer groups the explicitly listed source files by application and library. Cargo still
+determines what compiles: when adding a Rust module outside Visual Studio, use **Show All Files**
+or **Add > Existing Item** to include it in the browsing view.
+
+For source stepping, Debug overrides the workspace's `dev` optimization level to `0` and emits full
+debug information. Third-party dependencies keep their existing optimization level `2`.
+These overrides apply only inside the build script's process. The regular `cargo run -p vectorcraft`
+workflow keeps the existing profile settings. Rust values can be inspected through native PDB symbols,
+though Visual Studio's expression evaluator and language services have less Rust support than its
+C++/C# tooling; see the [Rust debugger guide](https://rustc-dev-guide.rust-lang.org/debuginfo/intro.html).
+There is no XAML designer or managed Hot Reload for this Rust/egui app.
+
+To pass a document or enable the local control channel, use **Project Properties > Configuration
+Properties > Debugging > Command Arguments**, for example `examples/feature-sheet.vectorcraft`
+or `--control 7979`. The working directory is the repository root. The port is opt-in; choose another
+if an existing app already uses it. For an isolated test session, add `VECTORCRAFT_NO_PREFS=1`
+to the Debugging **Environment** property. F5 normally uses the app's regular preferences.
+
+From a terminal, the same build is available without opening the IDE:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy RemoteSigned -File packaging/windows/visual-studio.ps1 -Configuration Debug
+```
+
+Local verification on 2026-10-14 used Visual Studio Professional 2026 **18.6.2** and Rust **1.95.0**:
+the x64 Debug and Release solution builds, Debug Clean/Rebuild and incremental build passed with
+zero warnings and errors. F5 launched the native debugger, a function
+breakpoint stopped in `vectorcraft_ui_egui::control::handle` (`control.rs:194`), F10 advanced to the
+next source line, and F5 resumed the waiting request. The app opened `examples/feature-sheet.vectorcraft`
+(4 artboards, 34 objects), rendered on an NVIDIA GeForce RTX 5080 / Direct3D 12, answered
+`ui.inspect` / `document.inspect` / `ui.screenshot`, and exited through `app.quit` with code 0.
+A separate Release run passed the same document, control, screenshot and clean-shutdown checks.
+The smoke runs used `VECTORCRAFT_NO_PREFS=1`; temporary local debugger overrides were removed
+after verification. The sample file was not saved. Rust formatting and build-script
+environment-restoration checks also passed.
 
 ## Web build
 
@@ -342,4 +402,5 @@ do not replace expected hashes automatically in response to a download mismatch.
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-14 | minor | Add the Cargo-backed Visual Studio 2026 solution, isolated x64 Debug/Release builds and native F5 setup. |
 | 2026-10-13 | minor | Document pinned PngSuite files, integrity checks and download budgets (#1729). |

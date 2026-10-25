@@ -1,0 +1,3715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Applications" />
+    <Filter Include="Applications\vectorcraft" />
+    <Filter Include="Applications\vectorcraft-cli" />
+    <Filter Include="Applications\vectorcraft-web" />
+    <Filter Include="Build and documentation" />
+    <Filter Include="Libraries" />
+    <Filter Include="Libraries\affinity" />
+    <Filter Include="Libraries\brush" />
+    <Filter Include="Libraries\cad" />
+    <Filter Include="Libraries\color" />
+    <Filter Include="Libraries\doc" />
+    <Filter Include="Libraries\effects" />
+    <Filter Include="Libraries\engine" />
+    <Filter Include="Libraries\eps" />
+    <Filter Include="Libraries\format" />
+    <Filter Include="Libraries\geom" />
+    <Filter Include="Libraries\mcp" />
+    <Filter Include="Libraries\metafile" />
+    <Filter Include="Libraries\pathops" />
+    <Filter Include="Libraries\pdf" />
+    <Filter Include="Libraries\plugins" />
+    <Filter Include="Libraries\render" />
+    <Filter Include="Libraries\scriptcheck" />
+    <Filter Include="Libraries\svg" />
+    <Filter Include="Libraries\testkit" />
+    <Filter Include="Libraries\text" />
+    <Filter Include="Libraries\three-d" />
+    <Filter Include="Libraries\tools" />
+    <Filter Include="Libraries\trace" />
+    <Filter Include="Libraries\ui-egui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cargo.toml">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="Cargo.lock">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include=".cargo\config.toml">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="docs\development.md">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="packaging\windows\visual-studio.ps1">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="apps\vectorcraft-cli\src\main.rs">
+      <Filter>Applications\vectorcraft-cli</Filter>
+    </None>
+    <None Include="apps\vectorcraft-cli\src\perf.rs">
+      <Filter>Applications\vectorcraft-cli</Filter>
+    </None>
+    <None Include="apps\vectorcraft-cli\tests\cli.rs">
+      <Filter>Applications\vectorcraft-cli</Filter>
+    </None>
+    <None Include="apps\vectorcraft-cli\tests\fileio.rs">
+      <Filter>Applications\vectorcraft-cli</Filter>
+    </None>
+    <None Include="apps\vectorcraft-cli\tests\mcp_e2e.rs">
+      <Filter>Applications\vectorcraft-cli</Filter>
+    </None>
+    <None Include="apps\vectorcraft-web\src\fonts.rs">
+      <Filter>Applications\vectorcraft-web</Filter>
+    </None>
+    <None Include="apps\vectorcraft-web\src\locks.rs">
+      <Filter>Applications\vectorcraft-web</Filter>
+    </None>
+    <None Include="apps\vectorcraft-web\src\main.rs">
+      <Filter>Applications\vectorcraft-web</Filter>
+    </None>
+    <None Include="apps\vectorcraft-web\src\web.rs">
+      <Filter>Applications\vectorcraft-web</Filter>
+    </None>
+    <None Include="apps\vectorcraft\build.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\automation_args.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\clipboard.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\compositor_gpu.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\control_deadlines.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\control_server.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\gpu.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\logging.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\mac_fonts.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\mac_menu.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\mac_window.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\main.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\open_documents.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\prefs_dir.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\printing.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\printing\windows7.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\profile.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\system_fonts.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\window.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\window_frame.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\src\xwayland.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft\tests\automation_args.rs">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="apps\vectorcraft-cli\Cargo.toml">
+      <Filter>Applications\vectorcraft-cli</Filter>
+    </None>
+    <None Include="apps\vectorcraft-web\Cargo.toml">
+      <Filter>Applications\vectorcraft-web</Filter>
+    </None>
+    <None Include="apps\vectorcraft\Cargo.toml">
+      <Filter>Applications\vectorcraft</Filter>
+    </None>
+    <None Include="crates\affinity\fuzz\fuzz_targets\container.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\fuzz\fuzz_targets\stream.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\access.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\container.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\geometry.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\lib.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\model.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\paint.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\preview.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\raster.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\shapes.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\stream.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\synth.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\tests.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\src\text.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\outline_limits.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\raster.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\real_files.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\support\corpus.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\support\features.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\support\text_fixture.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\tests\text.rs">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\brush\src\calli.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\brush\src\colorize.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\brush\src\defaults.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\brush\src\lib.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\brush\src\tests.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\brush\src\track.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\brush\src\warp.rs">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\cad\src\aci.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import\build.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import\curve.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import\entity.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import\reader.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import\tests.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\import\text.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\lib.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\scene.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\tests.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\cad\src\writer.rs">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\color\src\blend.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\cms\generic.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\cms\icc.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\cms\lab.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\cms\mod.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\cms\tests.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\cms\tests_icc.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\freeform.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\gradient.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\harmony.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\lib.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\libraries.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\palette_io.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\recolor.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\color\src\swatch.rs">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\doc\src\appearance.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\assets.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\blend.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\clipnest.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\cmyk.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\corners.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\depth.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\graph.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\hit.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\id_index.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\inks.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\inline.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\lib.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\links.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\live.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\marks.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\mem.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\metadata.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\node.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\orient.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\overprint.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\pattern.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\perspective.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\pixels.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\placed_document.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\profiles.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\puppet.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\range.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\rastersettings.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\reach.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\recolor.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\selection.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\selection\tests.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\setup.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\shaper.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\shared.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\slices.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\style_libs.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\swatches.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\symbols.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\tests_lookups.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\tests_slices.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\tests_units.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\text.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\trace.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\variables.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\doc\src\xml_id.rs">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\effects\src\adjust.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\bake.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\clip.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\distort.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\group.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\lib.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\live.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\marks.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\artistic.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\blur.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\brushstrokes.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\distort.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\edges.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\mod.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\pixelate.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\sharpen.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\tests.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\texture.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\pixel\video.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\raster.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\reshape.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\revolve.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\solids.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\arrow.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\dash.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\gradient.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\outline.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\tests.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\tests_arrows.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\tests_fit.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\tests_gradient.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\tests_reach.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stroke\width.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\stylize.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\tests.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\tests_scale.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\tests_solids.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\util.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\effects\src\warp.rs">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\appearance.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\assets.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\attributes.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\brushsym.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\buildcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\clipboard.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\clipboard\flavours.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\clipboard\resources.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\colorcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\colormgmt.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\colortheme.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\create.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\css.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\cut.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\distortcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\docinfo.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\docmenu.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\docsetup.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\draw2.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\edit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\effectcmd.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\expand.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileinfo.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\affinity.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\batch.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\dxf.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\dxfimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\encode.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\eps.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\export.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\imagemap.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\load.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\metafile.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\mod.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\native.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\pdf.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\pdfimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\pngtext.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\ppi.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\psdread.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\save.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\screens.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\svg.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_affinity.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_aiimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_dxf.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_dxfimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_eps.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_epsimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_exportas.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_jpeg.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_metafile.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_palette.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdf.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdf13.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfcolor.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfedit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdffidelity.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdflayers.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfoutput.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfsecurity.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfwebview.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_pdfx.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_psd.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_psdread.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_raster.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_screens.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_svg.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_svgedit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_svgenc.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_svgimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_text.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\tests_tiffbmp.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\text.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fileio\zip.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\findfiles\mod.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\findfiles\rules.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\findfiles\tests.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\findfiles\walk.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\flatten.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fontfiles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\fonts.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\freeform.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\gradient.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\graph.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\halftone.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\help.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\importmatches.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\inline.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\layer.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\layerpanel.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\library.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\linkfiles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\links.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\live.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\maskedit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\menucmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\mod.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\newart.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\newdoc.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\object.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\opacitymask.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\overprint.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\package.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\paint.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\panelcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\params.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\path.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\pathops.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\patterncmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\pdfcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\perspgrid.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\place\adopt.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\place\document.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\place\mod.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\place\text.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\plugin.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\prefscmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\print.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\printadvanced.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\printpresets.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\printtiling.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\rasterfx.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\rasterfx\report.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\recolor.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\recovery.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\scripts.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\select.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\shaper.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\shortcutset.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\slices.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\stroke.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\style.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\stylelib.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\swatch.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\swatchlib.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\tabs.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\textedit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\textstyles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\textwrap.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\threads.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\typecmd.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\typemenu.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\variablecmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\views.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\wand.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\webexport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\cmd\xform.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\file_access.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\guard.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\inspect.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\journal.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\lib.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\link_watch.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\namematch.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\steps.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_adjust.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_appearance.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_areafit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_assets.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_attributes.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_bboxrotate.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_blendfidelity.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_blendopts.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_blendspine.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_brushsym.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_build.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_charstroke.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_clip.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_clipboard.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_clipflavours.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_clippaint.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_cmdsplit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_cmykflatten.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_colorguide.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_colorguidelib.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_colormgmt.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_colorthemes.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_containers.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_css.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_cut.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_dashalign.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_distort.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_docsetup.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_draw2.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_editcolors.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_effectedit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_emptytype.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_envelope.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_envelope_distort.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_envelope_edit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_expand.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_eyedropper.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_file.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_fileinfo.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_flatpresets.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_flatpreview.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_flatten.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_focal.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_fontfiles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_fontlist.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_freeform.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_gradient.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_gradpanel.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_halftone.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_history_mem.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_ids_without_selection.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_inline.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_journal.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_knockout.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_labspots.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_large_edits.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_layerclip.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_layers.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_library.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_linked_stops.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_linkfiles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_links.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_linkspanel.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_linkwatch.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_liquify.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_live.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_livecorners.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_maskview.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_menucmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_nativefile.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_newart.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_newdoc.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_objexpand.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_opacitymask.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_outlinestroke.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_overprint.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_package.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_paintproxy.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_panelcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_paragraphs.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_params.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pathops.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pathtype.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pattern.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pdffidelity.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pdfmarks.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pdfpresets.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_pdfraster.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_perspgrid.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_persp_planes.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_persp_select.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_persp_text.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_place.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_placed_document.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_plugins.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_prefs.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_previewbounds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_print.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_printadvanced.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_printpresets.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_printpreview.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_printps.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_printtiling.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_proxyitems.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_puppetwarp.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_rasterfilters.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_rastersettings.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_recolor.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_recovery.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_reflecthit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_registration.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_save.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_saveoptions.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_scalestrokes.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_scripts.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_shaper.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_shortcutset.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_slices.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_smartguides.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_strokegeom.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_strokegradient.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_strokereach.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_strokeux.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_stylelib.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_stylepanel.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_styles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_swatchcmds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_swatches.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_swatchlib.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_symbolbounds.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_targeting.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_textcombos.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_textedit.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_textimport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_tileedge.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_tints.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_toolsettings.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_transparencygrid.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_typearea.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_typescale.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_units.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_variables.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_webexport.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_widthpoints.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_widthprofiles.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_widthtool.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tests_xform.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\tooling.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\src\units.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\affinity_artboards.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\affinity_corpus.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\affinity_text.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\artboard_click.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\clear_commands.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\color_settings.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\command_sweep.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\compound_attributes.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\eyedropper_sources.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\font_folder.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\import_fuzz.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\inline_text.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\known_bugs.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\lossy_overwrite.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\model_based.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\open_relative_path.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\param_keys.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\pen_click_after_smooth.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\pen_endpoint_picking.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\plugin_fuzz.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\ruler_origin.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\selection_commands.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\stroke_visibility.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\engine\tests\text_import_fuzz.rs">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\frames.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\lex.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\mesh.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\mod.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\obj.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\paint.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\read.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\style.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ai\tests.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\ate.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\data.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\graphics.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\interp.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\lex.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\mod.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\native.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\obj.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\preview.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\shading.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\tests.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\tests_fontnames.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\tests_generators.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\tests_illustrator.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\tests_images.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\tests_native.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\import\text.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\lib.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\print\mod.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\print\tests.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\ps.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\scene.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\tests.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\eps\src\tiff.rs">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\format\src\atomic.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\src\legacy.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\src\lib.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\src\stream.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\src\unpack.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\tests\links.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\tests\native_v3.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\tests\native_v4.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\tests\prop_format.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\tests\save_options.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\format\tests\streaming.rs">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\geom\src\arc.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\bez.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\corners.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\hit.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\lib.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\path.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\projective.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\recognize.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\shapes.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\src\snap.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\geom\tests\prop_geom.rs">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\mcp\src\backend.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\headless.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\lib.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\logging.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\prompts.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\resources.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\server.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_conventions.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_distortkeys.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_exportas.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_fileio.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_freeform.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_gradient.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_limits.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_links.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_liquify.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_pen.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_persp.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_place.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_protocol.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tests_svg.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\src\tools.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\tests\automation_roots.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\mcp\tests\protocol_props.rs">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\metafile\src\bytes.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\dib.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\emf.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\import.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\import\emf.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\import\wmf.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\lib.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\scene.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\tests.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\tests_import.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\metafile\src\wmf.rs">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\pathops\src\boolean.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\src\edit.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\src\fit.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\src\lib.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\src\offset.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\src\pathfinder.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\src\planar.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\tests\common\mod.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\tests\ops.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\tests\pathfinder_pinned.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\tests\props.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\tests\prop_pathops.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pathops\tests\regressions.rs">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pdf\src\editing.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\encrypt.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\export.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\forms.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\images.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_color.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_image.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_lines.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_mask.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_scan.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_shading.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\import_text.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\lab_spot.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\lib.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\linearize.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\marks.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\output.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\pages.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\patch.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\pdfx.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\post.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\presets.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\print\layout.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\print\mod.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\print\plates.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\print\settings.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\print\tiling.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\settings.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\streams.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\syntax.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_blend.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_charstroke.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_cmykblend.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_cmykimages.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_compression.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_dashalign.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_editing.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_encrypt.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_focal.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_fx.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_import_color.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_import_fidelity.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_import_layers.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_import_lines.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_import_options.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_import_overprint.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_layers.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_live_text.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_marks.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_output.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_pdf13.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_pdfx.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_presets.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_print.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_printadvanced.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_realtext.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_settings.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_stroke.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_strokeout.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_textstroke.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\src\tests_webview.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\tests\embedded_system_fonts.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\pdf\tests\system_fonts.rs">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\plugins\example\src\lib.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\effect.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\lib.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\manifest.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\objects.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\objects\tests.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\registry.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\runtime.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\src\wat.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\tests\abi.rs">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\render\examples\bench.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\brush_fx.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\bmp.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\gif.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\jpeg.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\mod.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\png.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\psd.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\quantize.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_bmp.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_jpeg.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_palette.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_psd.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_tga.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_tiff.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tests_web.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tga.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\tiff.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\encode\web.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\freeform.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\fx.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\group.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\images.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\ink.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\lib.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\live.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\lru.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\paint.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\pattern.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\placed_document.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\proof.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_adjust.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_blend.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_charstroke.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_clip.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_cmykblend.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_container.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_fontchange.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_freeform.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_fxzoom.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_isolation.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_knockout.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_layeropts.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_memory.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_objectfx.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_placed_document.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_setup.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_strokegradient.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\src\tests_tileedge.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\tests\dash_align.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\tests\golden.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\tests\gradient_alpha.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\tests\gradient_text.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\tests\radial_focal.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\render\tests\stroke_geometry.rs">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\analyze.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\catalog.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\directives.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\includes.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\lex.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\lib.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\report.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\scriptcheck\src\tests.rs">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\svg\src\css.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\export.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\css.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\css_transform.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\depth.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\files.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\fx.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\spread.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\symbol_units.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\text.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\import\vector_effect.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\src\lib.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\blend_export.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\container_export.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\css_rules.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\dash_align.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\data_attributes.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\effects_export.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\encoding_profile_fonts.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\focal.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\font_weights.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\gradients.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\ids.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\import_details.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\import_live.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\import_text.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\import_units.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\mask_options.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\non_scaling_stroke.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\options.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\prop_svg.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\raster_paints.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\roundtrip.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\stroke_export.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\symbols_layers.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\text_layout.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\text_paint_order.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\svg\tests\text_stroke.rs">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\testkit\src\ai.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\ase.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\fixtures.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\fonts.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\geom.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\invariants.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\lib.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\pdf.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\raster.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\testkit\src\strategies.rs">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\text\build.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\build\web_fonts.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\composer.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\craft_fonts.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\edit.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\embed.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\features.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\fontconfig.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\fontdb.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\hyphen.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\layout.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\lib.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\shape.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\suitcase.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_bidi.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_combos.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_embed.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_fit.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_inline.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_scripts.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_snap.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_sysfonts.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_typo.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_variable.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_versions.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\tests_vertical.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\test_fonts.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\src\thread.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\text\tests\system_fonts.rs">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\three-d\src\lib.rs">
+      <Filter>Libraries\three-d</Filter>
+    </None>
+    <None Include="crates\three-d\src\solid.rs">
+      <Filter>Libraries\three-d</Filter>
+    </None>
+    <None Include="crates\three-d\src\tests_solid.rs">
+      <Filter>Libraries\three-d</Filter>
+    </None>
+    <None Include="crates\three-d\src\visibility.rs">
+      <Filter>Libraries\three-d</Filter>
+    </None>
+    <None Include="crates\tools\src\bbox.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\builder.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\catalog.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\corners.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\cropimage.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\cut.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\direct.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\arap.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\liquify.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\pathutil.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\perspective.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\perspective\define.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\perspective\view.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\perspective\widget.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\puppet.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\distort\width.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\draw2.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\draw2\anchor.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\draw2\curvature.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\draw2\family.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\draw2\gesture.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\extra.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\guides.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\lib.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\meshblend.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\meshedit.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\params.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\pathtype.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\pen.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\place.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\printtiling.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\rulerguide.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\select.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\settings.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\shape.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\slice.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\symbolism.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\text.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\text_tests.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\typewidget.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\artboard.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\eyedropper.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\free.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\freeform.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\gradient.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\measure.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\transform.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\tools\src\xform\wand.rs">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\trace\src\centerline.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\contour.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\fit.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\gradient.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\group.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\lib.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\bezier.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\field.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\geom.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\march.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\mod.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\outline.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\palette.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\pipeline.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\restore.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\tests.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\testutil.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\logo\unmix.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\mosaic.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\quantize.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\shapes.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\smooth.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\subpixel.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\src\tests.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\tests\quality\inputs.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\tests\quality\main.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\tests\quality\measure.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\trace\tests\quality\raster.rs">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\ui-egui\build.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\background.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\brand.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\canvas.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\chrome.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\clipboard_probe.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\community.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\control.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\credits.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\cursors.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\about.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\artboard_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\blend_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\brush_art_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\brush_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\color_balance.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\color_guide_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\color_picker.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\command.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\confirm.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\corners.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\document_setup.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\dxf_import.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\dxf_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\edit_selection.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\effect.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\envelope.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\eps_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\expand.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\export_as.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\export_for_screens.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\eyedropper.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\file_info.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\find_links.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\flare_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\flatten.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\flattener_presets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\form.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\freehand.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\gradient_stop.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\graphic_style_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\graph_data.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\graph_design.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\halftone.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\import_pdf.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\layers_panel_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\layer_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\liquify.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\missing_fonts.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\missing_links.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\mod.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\modal.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\new_color_group.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\new_document.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\new_swatch.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\office_export.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\package.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\path_ops.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\pdf_presets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\perspective_grid.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\perspective_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\perspective_plane.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\perspective_presets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\place.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\placement_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\plugin.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\png_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\print.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\print_presets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\psd_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\raster_effects.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\rearrange_artboards.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\recolor.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\recovery.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\revolve.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\revolve_gizmo.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\saturate.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\save_changes.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\save_for_web.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\save_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\save_pdf.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\save_style_library.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\save_swatch_library.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\script_check.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\shapes.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\shortcut_import.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\slices.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\spot_colors.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\svg_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\swatch_conflict.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\swatch_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\symbolism_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\symbol_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_dxf.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_eps.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_export.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_import_pdf.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_metafile.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_modal.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_package.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_perspective.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_print.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_print_advanced.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_print_presets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_psd.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_raster_formats.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_rectangular_grid.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_revolve.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_revolve_gizmo.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_save_for_web.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_scale.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_screens.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_screen_assets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_shortcut_import.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_svg_options_range.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tests_tiff_bmp_tga.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\text_export.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\text_import.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tiff_bmp_tga.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tile_edge_color.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\tools.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\transform.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\transform_each.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\variables.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dialogs\width_point.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\dock.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\edit_toolbar.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\find_font.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\floating.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\font_menu.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\free_transform.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\graphics.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\i18n\catalog.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\i18n\mod.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\i18n\tests.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\icons.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\icon_data.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\io.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\lib.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\menus.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\native_menu.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\opening.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\palette.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\actions.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\align.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\appearance.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\artboards.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\asset_export.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\attributes.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\brushes.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\character.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\color.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\color_guide.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\color_themes.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\css_properties.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\doc_info.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\flattener_preview.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\glyphs.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\gradient.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\graphic_styles.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\history.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\image_trace.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\info.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\layers.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\libraries.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\library_panel.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\links.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\magic_wand.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\mod.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\navigator.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\opentype.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\paragraph.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\pathfinder.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\pattern_options.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\properties.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\separations.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\stroke.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\swatches.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\symbols.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tabs.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_appearance.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_asset_export.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_constrain.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_css_properties.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_effectedit.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_fontsize.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_freeform.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_links.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_maskview.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_stroke.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_strokedepth.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_strokeux.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_style_libraries.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\tests_units.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\text_styles.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\transform.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\transparency.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panels\variables.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panel_docking.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\panel_docking_tests.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\picks.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\place.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\prefs_dialog.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\print.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\recovery.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\render_worker.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\scrub.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\shortcuts.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\shortcut_editor.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\state.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\sysclip.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_adjust.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_aisave.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_automation.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_background.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_clipboard.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_contextmenu.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_cut.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_distortkeys.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_docsetup.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_fonts.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_font_menu.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_home.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_labels.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_nativemenu.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_nativeoptions.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_numfields.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_overprint.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_paintchips.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_pastechords.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_pathtype.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_pdfoutput.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_picks.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_place.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_plugins.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_printps.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_printtiling.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_puppetwarp.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_recolor.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_recovery.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_removeanchors.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_ruler_origin.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_save.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_saveext.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_screenmode.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_script_check.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_scrub.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_selectall.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_slices.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_svg.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_svgsave.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_synthetic.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_sysclip.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_sysclip_emf.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_sysclip_probe.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_transparencygrid.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\tests_widthtool.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\theme.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\thumb_worker.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\titlebar.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\toolbar.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\touch.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\ui_fonts.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\unsaved.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\widgets.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\ui-egui\src\workspaces.rs">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="crates\affinity\Cargo.toml">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\affinity\fuzz\Cargo.toml">
+      <Filter>Libraries\affinity</Filter>
+    </None>
+    <None Include="crates\brush\Cargo.toml">
+      <Filter>Libraries\brush</Filter>
+    </None>
+    <None Include="crates\cad\Cargo.toml">
+      <Filter>Libraries\cad</Filter>
+    </None>
+    <None Include="crates\color\Cargo.toml">
+      <Filter>Libraries\color</Filter>
+    </None>
+    <None Include="crates\doc\Cargo.toml">
+      <Filter>Libraries\doc</Filter>
+    </None>
+    <None Include="crates\effects\Cargo.toml">
+      <Filter>Libraries\effects</Filter>
+    </None>
+    <None Include="crates\engine\Cargo.toml">
+      <Filter>Libraries\engine</Filter>
+    </None>
+    <None Include="crates\eps\Cargo.toml">
+      <Filter>Libraries\eps</Filter>
+    </None>
+    <None Include="crates\format\Cargo.toml">
+      <Filter>Libraries\format</Filter>
+    </None>
+    <None Include="crates\geom\Cargo.toml">
+      <Filter>Libraries\geom</Filter>
+    </None>
+    <None Include="crates\mcp\Cargo.toml">
+      <Filter>Libraries\mcp</Filter>
+    </None>
+    <None Include="crates\metafile\Cargo.toml">
+      <Filter>Libraries\metafile</Filter>
+    </None>
+    <None Include="crates\pathops\Cargo.toml">
+      <Filter>Libraries\pathops</Filter>
+    </None>
+    <None Include="crates\pdf\Cargo.toml">
+      <Filter>Libraries\pdf</Filter>
+    </None>
+    <None Include="crates\plugins\Cargo.toml">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\plugins\example\Cargo.toml">
+      <Filter>Libraries\plugins</Filter>
+    </None>
+    <None Include="crates\render\Cargo.toml">
+      <Filter>Libraries\render</Filter>
+    </None>
+    <None Include="crates\scriptcheck\Cargo.toml">
+      <Filter>Libraries\scriptcheck</Filter>
+    </None>
+    <None Include="crates\svg\Cargo.toml">
+      <Filter>Libraries\svg</Filter>
+    </None>
+    <None Include="crates\testkit\Cargo.toml">
+      <Filter>Libraries\testkit</Filter>
+    </None>
+    <None Include="crates\text\Cargo.toml">
+      <Filter>Libraries\text</Filter>
+    </None>
+    <None Include="crates\three-d\Cargo.toml">
+      <Filter>Libraries\three-d</Filter>
+    </None>
+    <None Include="crates\tools\Cargo.toml">
+      <Filter>Libraries\tools</Filter>
+    </None>
+    <None Include="crates\trace\Cargo.toml">
+      <Filter>Libraries\trace</Filter>
+    </None>
+    <None Include="crates\ui-egui\Cargo.toml">
+      <Filter>Libraries\ui-egui</Filter>
+    </None>
+    <None Include="xtask\src\affinity_corpus.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\assets.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\brands.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\bundle.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\ico.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\layers.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\main.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\pngsuite.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\sha256.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\stats.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\version.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\src\web_fonts.rs">
+      <Filter>Build and documentation</Filter>
+    </None>
+    <None Include="xtask\Cargo.toml">
+      <Filter>Build and documentation</Filter>
+    </None>
+  </ItemGroup>
+</Project>
